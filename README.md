@@ -38,10 +38,13 @@ The application comes with a number of unit tests to test the database and the p
 python tests.py
 ```
 
-##Built With
-***Flask*** - The web framework used
-***Plotly*** - Data visualization platform
+## Built With ##
 
-##Authors
+**Flask** - The web framework used
+
+**Plotly** - Data visualization platform
+
+## Authors ##
 Lauren Elbaum
+
 Jesse Barnes--Tutor--4 to 6 hours per week
