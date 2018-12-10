@@ -7,10 +7,26 @@ It will also scrape WIkipedia and for the first paragraph of the pages about the
 
 Use this site to get a NASA API key: https://api.nasa.gov/index.html#apply-for-an-api-key
 
+Once you have your NASA API key, create a file in the `database` folder called **nasa_secrets.py**. Inside this file, add the following line:
+```
+NASA_API ='YOUR API KEY HERE'
+```
+
+**WARNING** Make sure the file and its contents are exactly as is described above.
+
 Use this site to get a plotly username and API key:
 https://plot.ly/python/getting-started/
 
-Install all of the things in the requirements.txt
+Once you have your PLOTLY API key and username, create a file in the `plots` folder called **plotly_secrets.py**. Inside this file, add the following line:
+```
+P_USERNAME = "YOUR USERNAME"
+P_API_KEY = "YOUR PLOTLY API KEY"
+```
+
+**WARNING** Make sure the file and its contents are exactly as is described above.
+
+
+**FINALLY**, Install all of the things in the requirements.txt
 
 ### Setting up Database: ###
 Before running the application, first set up the database. You can do this by running the following command: 
