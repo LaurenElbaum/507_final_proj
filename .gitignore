@@ -1,0 +1,6 @@
+**/__pycache__
+/cache/**
+.DS_Store
+/database/nasa_secrets.py
+/plots/plotly_secrets.py
+/venv/**
