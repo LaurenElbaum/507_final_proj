@@ -38,7 +38,7 @@ class SESE:
 
     def getLayout(self):
         return go.Layout(
-            title='<b>Solar Energetic Particles (SEPE)</b>',
+            title='<b>Solar Energetic Particles (SEP)</b>',
             titlefont=dict(
                 size=45,
                 color='#707070'
@@ -46,7 +46,7 @@ class SESE:
             width= 800,
             height= 500,
             xaxis=dict(
-                title='<b>Number of SESE events</b>',
+                title='<b>Number of SEP events</b>',
                 domain=[0.03, 0.98],
                 titlefont=dict(
                     family='Arial, sans-serif',

@@ -157,7 +157,8 @@ def populate_particle_table(particleFile):
         if count % 25 == 0:
             print('#', end='', flush=True)
             time.sleep(1)
-
+                                #Flush tells it to print things immediately
+                                #end = '' makes it so that it's right next to it.
         flareID = ''
         cmeID = ''
         instruments = ''
@@ -186,7 +187,7 @@ def populate_particle_table(particleFile):
 
 
 #####################################################
-# POPULATE THE NESR ESRTH OBJECTS TABLE
+# POPULATE THE NEAR EARTH OBJECTS TABLE
 # function also shows progress bar
 #####################################################
 def populate_neo_table(neoFile):

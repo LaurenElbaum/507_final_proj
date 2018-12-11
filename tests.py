@@ -65,7 +65,7 @@ class TestDatabase(unittest.TestCase):
         '''
         results = cur.execute(sql)
         result_list = results.fetchall()
-        self.assertEqual(len(result_list[0]), 4)
+        self.assertEqual(len(result_list[0]), 4) #Asserts that the length of the two arguments are equal, 4 columns will come back
         conn.close()
 
 
@@ -84,7 +84,7 @@ class TestPlots(unittest.TestCase):
         flareInst = SolarFlares()
         a = flareInst.getData()
         self.assertIsNotNone(a)
-        self.assertEqual(len(a['y']), len(a['class']))
+        self.assertEqual(len(a['y']), len(a['class'])) #Makes sure that the length of the amount of y's is the same as the length of amount of classes, etc.
         div = flareInst.makePlot()
         self.assertIsNotNone(div)
 

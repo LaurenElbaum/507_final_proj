@@ -9,10 +9,10 @@ from bs4 import BeautifulSoup
 dir_path = path.abspath(path.join(__file__ ,"../.."))
 EXT = ('{}/cache/').format(dir_path)
 
-# set up time stuff
+# set up time
 now = datetime.now()
 sec_since_epoch = now.timestamp()
-MAX_STALENESS = 86400 # seconds
+MAX_STALENESS = 61200 # seconds
 
 
 def load_cache(filename):
@@ -21,7 +21,7 @@ def load_cache(filename):
         cache_contents = cache_file.read()
         cache = json.loads(cache_contents)
         cache_file.close()
-    # if there was no file, no worries. There will be soon!
+    # if there was no file, there will be soon!
     except:
         cache = {}
 
@@ -43,7 +43,7 @@ def get_scrape_one(link):
 
 
 # Scrapes the wikipidea page @ link and returns text from
-# the first paragraph of page. SOlar Flare specific
+# the first paragraph of page. Solar Flare specific
 def get_scrape_two(link):
     html = requests.get(link).text
     soup = BeautifulSoup(html, 'html.parser')
